@@ -1,7 +1,6 @@
-import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { AppLoading } from 'expo';
+import AppLoading from 'expo-app-loading';
 
 import {
   useFonts,
@@ -12,17 +11,16 @@ import {
 
 import Routes from './src/routes';
 
-const [fontLoaded] = useFonts({
-  Montserrat_500Medium,
-  Montserrat_400Regular,
-  Montserrat_700Bold,
-});
-
-if (!fontLoaded) {
-  <AppLoading />;
-}
-
 export default function App(): JSX.Element {
+  const [fontLoaded] = useFonts({
+    Montserrat_500Medium,
+    Montserrat_400Regular,
+    Montserrat_700Bold,
+  });
+
+  if (!fontLoaded) {
+    return <AppLoading />;
+  }
   return (
     <>
       <StatusBar style="light" backgroundColor="#000" translucent={false} />
