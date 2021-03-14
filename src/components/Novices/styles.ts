@@ -5,7 +5,7 @@ export const Container = styled.TouchableOpacity`
   background-color: #fff;
   height: 250px;
   width: 200px;
-  elevation: 2px;
+  elevation: 2;
   border-radius: 10px;
   padding: 15px;
   margin-right: 30px;
@@ -22,6 +22,7 @@ export const Cover = styled.Image`
 export const Content = styled.View`
   flex-direction: row;
   align-items: center;
+  margin: 10px 0;
 `;
 
 export const Title = styled.Text`
@@ -35,6 +36,7 @@ export const Dot = styled.View`
   height: 4px;
   border-radius: 4px;
   background-color: red;
+  margin-left: 4px;
 `;
 
 export const Badge = styled.Text`
@@ -43,15 +45,27 @@ export const Badge = styled.Text`
   font-family: 'Montserrat_700Bold';
 `;
 
-export const Description = styled.Text``;
+export const Description = styled.Text`
+  font-family: 'Montserrat_400Regular';
+  font-size: 9px;
+  color: #4f4a4a;
+`;
 
-export const Footer = styled.View``;
+export const Footer = styled.View`
+  flex-direction: row;
+  margin-top: 5px;
+  align-items: center;
+  width: 100%;
+`;
 
 export const Width = styled.View`
   width: 80%;
 `;
 
-export const Price = styled.Text``;
+export const Price = styled.Text`
+  font-size: 15px;
+  font-family: 'Montserrat_700Bold';
+`;
 
 export const Complete = styled.View`
   width: 20%;

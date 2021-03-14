@@ -9,7 +9,7 @@
 - [Prettier](https://prettier.io)
 - [Styled Components](https://styled-components.com)
 
-## 📥 Downlond
+## 📥 Download
 
 ```bash
 ## clone o repositório

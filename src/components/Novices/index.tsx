@@ -1,5 +1,4 @@
 import React from 'react';
-import { View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 import {
@@ -30,11 +29,10 @@ const Novices: React.FC<Data> = ({ cover, onPress, name, description }) => {
 
       <Content>
         <Title>{name}</Title>
-      </Content>
-      <Dot>
-        <View />
+        <Dot />
         <Badge>Novo</Badge>
-      </Dot>
+      </Content>
+
       <Description>{description}</Description>
 
       <Footer>
