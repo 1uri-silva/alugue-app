@@ -44,3 +44,10 @@ export const Title = styled.Text`
   font-size: 18px;
   padding: 0 15px;
 `;
+
+export const Margin = styled.View`
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  margin-top: 20px;
+`;

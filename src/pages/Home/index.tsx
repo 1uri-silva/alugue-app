@@ -3,10 +3,12 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 
-import house from '../../assets/house1.jpg';
+import house from '../../assets/house5.jpg';
 
-import { Header, InputSearch, InputArea, New, Title } from './styles';
+import { Header, InputSearch, InputArea, New, Title, Margin } from './styles';
 import Novices from '../../components/Novices';
+import House from '../../components/House';
+import Recommended from '../../components/Recommended';
 
 const Home: React.FC = () => {
   const nav = useNavigation();
@@ -57,6 +59,39 @@ const Home: React.FC = () => {
           description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
           onPress={handle}
         />
+      </ScrollView>
+
+      <Margin>
+        <Title>Proximo</Title>
+      </Margin>
+
+      <ScrollView showsHorizontalScrollIndicator={false} horizontal>
+        <House
+          cover={house}
+          description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
+        />
+
+        <House
+          cover={house}
+          description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
+        />
+
+        <House
+          cover={house}
+          description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
+        />
+      </ScrollView>
+
+      <Margin>
+        <Title>Dica do dia</Title>
+      </Margin>
+
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        <Recommended cover={house} name="Rancho" offer="25% OFF" />
+
+        <Recommended cover={house} name="Casa Grande" offer="10% OFF" />
+
+        <Recommended cover={house} name="Barraco" offer="50% OFF" />
       </ScrollView>
     </ScrollView>
   );
