@@ -1,6 +1,9 @@
 # alugue-app
 
-## 🚀 App ainda em desenvolvimento
+## 🚀 Preview
+
+[Home]()
+[Detalhes]()
 
 ## 📱 Tecnológias
 - [Expo](https://docs.expo.io)
