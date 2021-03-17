@@ -4,7 +4,6 @@ export const Container = styled.ImageBackground`
   width: 230px;
   height: 130px;
   margin-right: 20px;
-  border-radius: 20px;
   margin-bottom: 40px;
   opacity: 0.8;
   background-color: #000;

@@ -11,7 +11,7 @@ interface Data {
 
 const Recommended: React.FC<Data> = ({ cover, name, offer }) => {
   return (
-    <Container source={cover} blurRadius={2}>
+    <Container source={cover} blurRadius={3}>
       <House style={styles.shadow}>{name} </House>
 
       <Off style={styles.shadow}>{offer}</Off>
