@@ -2,8 +2,8 @@
 
 ## 🚀 Preview
 
-[Home](https://github.com/rd-easy/alugue-app/blob/master/src/images/Home.png "Home")
-[Detalhes](src/images/Detalhes.png "Details")
+![Home](/src/images/Home.png "Home")
+![Detalhes](src/images/Detalhes.png "Details")
 
 ## 📱 Tecnológias
 - [Expo](https://docs.expo.io)
